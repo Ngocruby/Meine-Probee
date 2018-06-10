@@ -1,0 +1,25 @@
+body{
+     background-image:url(/probejs/images/room.jpg); /* (../images/room.jpg)*/
+    /* background-color: 660033;                          background-image:     url(http://anhdep.pro/wp-content/uploads/2015/08/hinh-nen-.jpg);*/
+    
+    background-repeat: no-repeat;
+    background-attachment: scroll; /*neu scroll la man hinh di chuyen theo chuot khi keo*/
+    background-size: cover;
+
+}
+/* nav{
+  
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+} */
+
+div{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 90px;
+}

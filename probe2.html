@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/stylee.css">
+    <!-- rel="stylesheet" báo cho trình duyệt đây là file CSS-->
+
+
+    <title></title>
+</head>
+
+<body>
+    <div>
+        <title id="dom-title"> Learning DOM abc </title>
+        <script type="text/javascript">
+            var myTitle = document.getElementById("dom-title").innerHTML;
+            document.write("Title:" + myTitle)
+        </script>
+        <br>
+    </div>
+    <br>
+
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16.0.0/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@16.0.0/dist/react-dom.js"></script>
+    <script type="text/javascript">
+        const rootElement = document.getElementById('root')
+        // const element = document.createElement('div')
+        // element.textContent = 'Hello World'
+        // element.className = 'container'
+        // rootElement.appendChild(element)
+        const element = React.creatElement('div', 
+        {className: 'container'}, 
+        'Hello World'
+        )
+        console.log(element)
+        ReactDOM.render(element, rootElement)
+    </script>
+</body>
+<footer></footer>
+
+</html>
